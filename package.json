@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "anyhasher-backend": "file:backend"
+  }
+}
