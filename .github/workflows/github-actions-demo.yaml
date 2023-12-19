@@ -6,5 +6,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - run: npm i backend/
+      - run: ls
+      - run: cd backend
+      - run: ls
+      - run: npm i
       - run: npm run build
