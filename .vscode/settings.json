@@ -1,0 +1,6 @@
+{
+  "yaml.schemas": {
+    "kubernetes": "*.yaml",
+    "https://raw.githubusercontent.com/GitTools/GitVersion/main/schemas/6.0/GitVersion.configuration.json": "file:///c%3A/Users/masive/projects/anyhasher/.github/workflows/github-actions-demo.yaml"
+  }
+}
