@@ -25,17 +25,17 @@ jobs:
       - name: build
         run: cd backend && npm run build
 
-      - name: Generate Artifacts
-        run: cd backend/build && zip -r artifact.zip ./ -x '*.git*'
-
       # - name: Generate Artifacts
-      #   uses: actions/upload-artifact@v2
-      #   with:
-      #     name: backend
-      #     path: backend/dist
+      #   run: cd backend/build && zip -r artifact.zip ./ -x '*.git*'
 
-      - name: Store Artifacts
+      - name: Generate Artifacts
         uses: actions/upload-artifact@v2
         with:
           name: backend
-          path: backend/build/artifact.zip
+          path: backend/dist
+
+      # - name: Store Artifacts
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     name: backend
+      #     path: backend/build/artifact.zip
